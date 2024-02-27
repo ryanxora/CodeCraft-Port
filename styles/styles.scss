@@ -562,3 +562,148 @@ header{
 }
 
 
+
+
+// cta
+
+.cta-section{
+    width: 100%;
+    height: auto;
+    padding: $spacing-lg;
+    background-color: $clr-bg;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 3rem;
+    font-family: $ff-body;
+    color: $clr-txt;
+    border-bottom: 2px solid $clr-line;
+
+    .cta-wrap{
+        border-radius: $border-radius;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.589) ,rgba(0, 0, 0, 0.5)),url(../img/projects/Ephemeral\ Currents\ Abstract\ Waves\ in\ Motion.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        padding: $spacing-md;
+
+        .cta-txt{
+            flex-basis: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            gap: 3rem;
+
+            h4{
+                color: white;
+                text-transform: uppercase;
+            }
+            p{
+                color: rgba(255, 255, 255, 0.664);
+                text-transform: capitalize;
+            }
+
+        }
+        .cta-input {
+            display: flex;
+            flex-basis: 50%;
+            flex-direction: column;
+            
+        
+            form {
+                margin-top: 50px;
+                display: flex;
+                flex-direction: column;
+        
+                label {
+                    margin-bottom: 8px;
+                    color: rgba(255, 255, 255, 0.705);
+                }
+        
+                input,
+                textarea {
+                    padding: 8px;
+                    margin-bottom: 16px;
+                    border: 1px solid #dbdbdb;
+                    background-color: rgba(0, 0, 0, 0.466);
+                    color: white;
+                    border-radius: 4px;
+                }
+                button{
+                    &:hover{
+                        color: white;
+                        border: 1px solid white;
+                    }
+                }
+                
+            }
+        }
+        
+    }
+}
+
+
+
+
+// responsive
+
+
+@media screen and (max-width : 900px) {
+    .cta-section{
+        text-align: center;
+        .cta-wrap{
+            flex-wrap: wrap;
+            gap: 1rem;
+            .cta-txt{
+                text-align: center;
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                flex-basis: 100%;
+                gap: 2rem;
+                h4{
+                    font-size: $h5-font-size;
+                }
+            }
+            .cta-input{
+                flex-basis: 100%;
+            }
+        }  
+    }
+}
+
+@media screen and (max-width : 760px) {
+    .cta-section{
+        text-align: center;
+        .cta-wrap{
+            flex-wrap: wrap;
+            gap: 1rem;
+            .cta-txt{
+                text-align: center;
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                flex-basis: 100%;
+                gap: 2rem;
+                h4{
+                    font-size: $h5-font-size;
+                }
+            }
+            .cta-input{
+                flex-basis: 100%;
+            }
+        }  
+    }
+}
+
+
+
