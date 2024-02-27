@@ -10,6 +10,10 @@
 // button
 @import 'buttons';
 
+// title-styles
+
+@import 'title-style';
+
 
 
 // header
@@ -296,20 +300,21 @@ header{
     color: $clr-txt;
     
     .section-title{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.5rem;
+        
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        // gap: 0.5rem;
 
-        .title-line{
-            width: 35px;
-            height: 4px;
-            background-color: $clr-primary;
-        }
+        // .title-line{
+        //     width: 35px;
+        //     height: 4px;
+        //     background-color: $clr-primary;
+        // }
 
-        h4{
-            text-transform: uppercase;
-        }
+        // h4{
+        //     text-transform: uppercase;
+        // }
     }
 
     .project-count-wrap{
@@ -404,3 +409,82 @@ header{
         }
     }
 }
+
+
+// project section
+
+.project-section{
+    width: 100%;
+    height: auto;
+    padding: $spacing-lg;
+    background-color: $clr-bg;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 3rem;
+    font-family: $ff-body;
+    color: $clr-txt;
+    border-bottom: 2px solid $clr-line;
+
+    .project-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+    
+        .project-card {
+            background-color: transparent;
+            width: 300px;
+            height: 380px;
+            grid-column: span 1;
+            border-radius: $border-radius;
+            display: flex;
+            flex-direction: column;
+
+            .project-card-wrap{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                gap: 1rem;
+
+                img{
+                    width: 300px;
+                    object-fit: cover;
+                   height: 300px;
+                   cursor: pointer;
+                   border-radius: $border-radius;
+                }
+
+                h6{
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    
+}
+
+
+// responsive
+
+
+@media screen and (max-width : 900px) {
+    .project-section{
+        text-align: center;
+        .project-wrap{
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+@media screen and (max-width : 760px) {
+    .project-section{
+        text-align: center;
+        .project-wrap{
+            grid-template-columns: 1fr;
+        }
+    }
+}
+

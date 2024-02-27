@@ -1,0 +1,16 @@
+.section-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    .title-line{
+        width: 35px;
+        height: 4px;
+        background-color: $clr-primary;
+    }
+
+    h4{
+        text-transform: uppercase;
+    }
+}
