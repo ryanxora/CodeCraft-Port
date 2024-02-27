@@ -707,3 +707,114 @@ header{
 
 
 
+// footer
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: $clr-bg;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: $spacing-lg;
+    font-family: $ff-body;
+    color: $clr-txt;
+
+    .logo h3{
+        color: $clr-txt;
+        cursor: pointer;
+        font-family: $ff-header;
+        font-weight: $font-weight-regular;
+
+        span{
+            color: $clr-primary;
+            font-weight: $font-weight-bold;
+        }
+    }
+    ul li{
+        display: inline-block;
+        margin: 1rem;
+        a{
+            font-family: $ff-header;
+            font-size: $p-font-size;
+            font-weight: $font-weight-bold;
+            color: $clr-txt;
+            position: relative;
+            text-transform: uppercase;
+            &::after {
+                position: absolute;
+                content: '';
+                left: 0;
+                width: 0%;
+                bottom: -4px;
+                height: 3px;
+                background-color: $clr-primary;
+                transition: width ease 0.5s;
+            }
+    
+            &:hover::after {
+                width: 100%;
+            }
+        }
+    }
+
+    .social-media{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        
+        img{
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            border-radius: $border-radius-50;
+            transition: all ease-in 0.3s;
+
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width : 900px) {
+    footer{
+        flex-wrap: wrap;
+
+        .social-media{
+            margin: auto;
+        }
+    }
+}
+
+@media screen and (max-width : 760px) {
+    footer{
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        ul li{
+            display: block;
+            margin: 1rem;
+        }
+        .social-media{
+            margin: auto;
+        }
+    }
+}
+
+
+// copyright
+
+.copyright{
+    width: 100%;
+    height: auto;
+    background-color: $clr-bg;
+    text-align: center;
+    font-family: $ff-body;
+    color: $clr-txt;
+    padding: $spacing-md;
+}
