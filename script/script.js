@@ -11,6 +11,13 @@ $(document).ready(function () {
         hamburger.removeClass("active");
         navMenu.removeClass("active");
     });
+
+
+
+
+
+
+    
 });
 
 
@@ -57,3 +64,8 @@ function downloadCV() {
     // Remove the link from the document
     document.body.removeChild(link);
 }
+
+
+
+
+

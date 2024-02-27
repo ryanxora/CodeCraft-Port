@@ -299,23 +299,7 @@ header{
     font-family: $ff-body;
     color: $clr-txt;
     
-    .section-title{
-        
-        // display: flex;
-        // align-items: center;
-        // justify-content: center;
-        // gap: 0.5rem;
-
-        // .title-line{
-        //     width: 35px;
-        //     height: 4px;
-        //     background-color: $clr-primary;
-        // }
-
-        // h4{
-        //     text-transform: uppercase;
-        // }
-    }
+    
 
     .project-count-wrap{
         padding-top: 3rem;
@@ -487,4 +471,94 @@ header{
         }
     }
 }
+
+
+
+
+// testominols section
+
+
+.testimonials{
+    width: 100%;
+    height: auto;
+    padding: $spacing-lg;
+    background-color: $clr-bg;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 3rem;
+    font-family: $ff-body;
+    color: $clr-txt;
+    border-bottom: 2px solid $clr-line;
+
+    .testimonials-wrap{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+
+        .testimonial-card{
+            background-color: rgb(204, 204, 204);
+            grid-column: span 1;
+            height: 250px;
+            width: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            border-radius: $border-radius;
+            box-shadow: 0px 0px 10px rgba(63, 63, 63, 0.63);
+
+            .testimonial-card-img{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+
+                img{
+                    width: 140px;
+                    border-radius: $border-radius-50;
+                }
+                .name{
+                    font-weight: $font-weight-bold;
+                }
+
+            }
+            .testimonial-card-quote{
+                flex-basis: 60%;
+            }
+        }
+    }
+}
+
+
+// responsive
+
+
+@media screen and (max-width : 900px) {
+    .testimonials{
+        text-align: center;
+        .testimonials-wrap{
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+@media screen and (max-width : 760px) {
+    .testimonials{
+        text-align: center;
+        .testimonials-wrap{
+            .testimonial-card{
+                width: 300px;
+                padding: $spacing-md;
+                .testimonial-card-img{
+                    img{
+                        width: 100px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 
