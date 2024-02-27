@@ -1,0 +1,36 @@
+// _buttons.scss
+
+.btn-bg {
+  height: 35px;
+  padding: 5px 1rem;
+  border-radius: $border-radius;
+  background-color: $clr-accent;
+  border: 2px solid $clr-accent;
+  cursor: pointer;
+  color: white;
+  font-weight: $font-weight-bold;
+  transition: all ease 0.5s;
+
+  &:hover {
+    background-color: transparent;
+    color: $clr-accent;
+  }
+}
+
+
+.btn-no-bg{
+  height: 35px;
+  padding: 5px 1rem;
+  border-radius: $border-radius;
+  background-color: transparent;
+  border: 2px solid $clr-accent;
+  cursor: pointer;
+  color: $clr-accent;
+  font-weight: $font-weight-bold;
+  transition: all ease 0.5s;
+
+  &:hover {
+    background-color: $clr-accent;
+    color: white;
+  }
+}

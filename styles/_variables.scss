@@ -1,0 +1,43 @@
+// _variables.scss
+
+// Colors
+$clr-txt: #333333;      // Text color
+$clr-bg: #f5f5f5;       // Background color
+$clr-accent: #e74c3c; // Accent color
+$clr-primary : #2ecc71;
+$clr-line : #59e79444;
+
+// Font Sizes
+$base-font-size: 16px;
+$font-scale: 1.25;
+
+$p-font-size: $base-font-size;
+$h6-font-size: $base-font-size * $font-scale;
+$h5-font-size: $h6-font-size * $font-scale;
+$h4-font-size: $h5-font-size * $font-scale;
+$h3-font-size: $h4-font-size * $font-scale;
+$h2-font-size: $h3-font-size * $font-scale;
+$h1-font-size: $h2-font-size * $font-scale;
+
+// Font Weights
+$font-weight-thin: 200;
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
+// Spacing
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 1.5rem;
+$spacing-lg: 2rem;
+$spacing-xl: 3rem;
+
+// Border Radius
+$border-radius: 5px;
+$border-radius-50 : 50%;
+
+
+// font-family
+
+$ff-body :  "Roboto", sans-serif;
+$ff-header :  "Montserrat", sans-serif;
+$ff-highlight :  "Lora", serif;
