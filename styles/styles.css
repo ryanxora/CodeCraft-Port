@@ -305,12 +305,12 @@ header .hamburger .bar {
   width: 100%;
   height: auto;
   background-color: #f5f5f5;
-  padding: 2rem;
+  padding: 4rem 2rem;
   font-family: "Roboto", sans-serif;
   color: #333333;
 }
 .project-count-section .project-count-wrap {
-  padding-top: 3rem;
+  padding-top: 5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -388,7 +388,7 @@ header .hamburger .bar {
 .project-section {
   width: 100%;
   height: auto;
-  padding: 2rem;
+  padding: 4rem 2rem;
   background-color: #f5f5f5;
   display: flex;
   flex-direction: column;
@@ -400,6 +400,7 @@ header .hamburger .bar {
   border-bottom: 2px solid rgba(199, 199, 199, 0.2666666667);
 }
 .project-section .project-wrap {
+  padding-top: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1rem;
@@ -452,7 +453,7 @@ header .hamburger .bar {
 .testimonials {
   width: 100%;
   height: auto;
-  padding: 2rem;
+  padding: 4rem 2rem;
   background-color: #f5f5f5;
   display: flex;
   flex-direction: column;
@@ -464,6 +465,7 @@ header .hamburger .bar {
   border-bottom: 2px solid rgba(199, 199, 199, 0.2666666667);
 }
 .testimonials .testimonials-wrap {
+  padding-top: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
@@ -488,6 +490,11 @@ header .hamburger .bar {
 }
 .testimonials .testimonials-wrap .testimonial-card .testimonial-card-img img {
   width: 140px;
+  height: 140px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   border-radius: 50%;
 }
 .testimonials .testimonials-wrap .testimonial-card .testimonial-card-img .name {
@@ -520,7 +527,7 @@ header .hamburger .bar {
 .cta-section {
   width: 100%;
   height: auto;
-  padding: 2rem;
+  padding: 4rem 2rem;
   background-color: #f5f5f5;
   display: flex;
   flex-direction: column;
@@ -532,6 +539,7 @@ header .hamburger .bar {
   border-bottom: 2px solid rgba(199, 199, 199, 0.2666666667);
 }
 .cta-section .cta-wrap {
+  margin-top: 2rem;
   border-radius: 5px;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.589), rgba(0, 0, 0, 0.5)), url(../img/projects/Ephemeral\ Currents\ Abstract\ Waves\ in\ Motion.jpg);
   background-position: center;

@@ -295,14 +295,14 @@ header{
     width: 100%;
     height: auto;
     background-color: $clr-bg;
-    padding: $spacing-lg;
+    padding: $spacing-white $spacing-lg;
     font-family: $ff-body;
     color: $clr-txt;
     
     
 
     .project-count-wrap{
-        padding-top: 3rem;
+        padding-top: 5rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -400,7 +400,7 @@ header{
 .project-section{
     width: 100%;
     height: auto;
-    padding: $spacing-lg;
+    padding: $spacing-white $spacing-lg;
     background-color: $clr-bg;
     display: flex;
     flex-direction: column;
@@ -412,6 +412,7 @@ header{
     border-bottom: 2px solid $clr-line;
 
     .project-wrap {
+        padding-top: 2rem;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 1rem;
@@ -481,7 +482,7 @@ header{
 .testimonials{
     width: 100%;
     height: auto;
-    padding: $spacing-lg;
+    padding: $spacing-white $spacing-lg;
     background-color: $clr-bg;
     display: flex;
     flex-direction: column;
@@ -493,6 +494,7 @@ header{
     border-bottom: 2px solid $clr-line;
 
     .testimonials-wrap{
+        padding-top: 2rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
@@ -517,6 +519,9 @@ header{
 
                 img{
                     width: 140px;
+                    height: 140px;
+                    object-fit: cover;
+                    object-position: center;
                     border-radius: $border-radius-50;
                 }
                 .name{
@@ -569,7 +574,7 @@ header{
 .cta-section{
     width: 100%;
     height: auto;
-    padding: $spacing-lg;
+    padding: $spacing-white $spacing-lg;
     background-color: $clr-bg;
     display: flex;
     flex-direction: column;
@@ -581,6 +586,7 @@ header{
     border-bottom: 2px solid $clr-line;
 
     .cta-wrap{
+        margin-top: 2rem;
         border-radius: $border-radius;
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0.589) ,rgba(0, 0, 0, 0.5)),url(../img/projects/Ephemeral\ Currents\ Abstract\ Waves\ in\ Motion.jpg);
         background-position: center;
